@@ -17,8 +17,6 @@ public class DuelRunnable extends BukkitRunnable {
 
         for(SoloDuel duel : SoloDuelManager.getDuels()) {
 
-            duel.setMatchDuration(duel.getMatchDuration() + 1);
-
             if(duel.getMatchDuration() <= 5) {
 
                 for(UUID uuid : duel.getPlayers()) {
@@ -30,8 +28,10 @@ public class DuelRunnable extends BukkitRunnable {
                     player.sendMessage(ChatColor.YELLOW + "Match starting in " + ChatColor.GRAY + (5 - duel.getMatchDuration()) + ChatColor.YELLOW + " seconds");
 
                 }
-
             }
+
+            duel.setMatchDuration(duel.getMatchDuration() + 1);
+
         }
     }
 }

@@ -57,8 +57,13 @@ public class SoloDuelManager {
                 player1.teleport(arena.getLoc1());
                 player2.teleport(arena.getLoc2());
 
+                player1.sendMessage("");
                 player1.sendMessage(ChatColor.YELLOW + "You are fighting " + ChatColor.RED + player2.getName());
+                player1.sendMessage("");
+
+                player2.sendMessage("");
                 player2.sendMessage(ChatColor.YELLOW + "You are fighting " + ChatColor.RED + player1.getName());
+                player2.sendMessage("");
 
                 ArenaManager.getManager().getAvailable().remove(arena);
 
