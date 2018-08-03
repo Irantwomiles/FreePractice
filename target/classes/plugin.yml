@@ -1,0 +1,18 @@
+name: FreePractice
+main: practice.FreePractice
+author: Irantwomiles
+version: 1.0-BETA
+commands:
+  arena:
+    description: Commands for arenas
+  duel:
+    description: Send a duel request to fight another player
+  accept:
+    description: Accept a duel request
+  gamemode:
+    description: Create gamemodes
+    aliases: [game, gametype]
+  seteditor:
+    description: Set spawn location for the kit editor
+  setspawn:
+    description: Set spawn location

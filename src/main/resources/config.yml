@@ -1,0 +1,14 @@
+spawn:
+  x: 0
+  y: 10
+  z: 0
+  pitch: 0.0
+  yaw: 0.0
+  world: world
+editor:
+  x: 0
+  y: 10
+  z: 0
+  pitch: 0.0
+  yaw: 0.0
+  world: world
