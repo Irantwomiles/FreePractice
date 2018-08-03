@@ -14,6 +14,9 @@ import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import practice.FreePractice;
 import utils.SpawnLocations;
+import utils.profile.PlayerState;
+import utils.profile.Profile;
+import utils.profile.ProfileManager;
 
 import java.util.UUID;
 
@@ -95,6 +98,10 @@ public class DuelEndListeners implements Listener {
                     Player player = Bukkit.getPlayer(uuid);
 
                     if (player == null) continue;
+
+                    Profile profile = ProfileManager.getInstance().getProfile(player);
+
+                    if(profile != null) profile.setState(PlayerState.LOBBY);
 
                     locations.teleportSpawn(player);
                 }

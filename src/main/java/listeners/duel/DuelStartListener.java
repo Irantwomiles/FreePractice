@@ -1,6 +1,5 @@
 package listeners.duel;
 
-import duel.Duel;
 import duel.solo.SoloDuel;
 import kit.KitManager;
 import listeners.duel.custom.DuelStartEvent;
@@ -58,8 +57,27 @@ public class DuelStartListener implements Listener {
 
         Bukkit.getScheduler().scheduleSyncDelayedTask(FreePractice.getInstance(), new Runnable() {
             public void run() {
-                KitManager.getManager().loadKits(player1, duel.getGame(), true);
-                KitManager.getManager().loadKits(player2, duel.getGame(), true);
+
+                if(KitManager.getManager().getKitSize(player1, duel.getGame(), true) > 0) {
+
+                    KitManager.getManager().loadKits(player1, duel.getGame(), true);
+                } else {
+                    player1.getInventory().clear();
+
+                    player1.getInventory().setContents(duel.getGame().getInv());
+                    player1.getInventory().setArmorContents(duel.getGame().getArmor());
+                }
+
+                if(KitManager.getManager().getKitSize(player2, duel.getGame(), true) > 0) {
+
+                    KitManager.getManager().loadKits(player2, duel.getGame(), true);
+                } else {
+                    player2.getInventory().clear();
+
+                    player2.getInventory().setContents(duel.getGame().getInv());
+                    player2.getInventory().setArmorContents(duel.getGame().getArmor());
+                }
+
             }
         }, 5);
 

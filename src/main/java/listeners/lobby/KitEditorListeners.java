@@ -1,4 +1,5 @@
 package listeners.lobby;
+import duel.solo.SoloDuelManager;
 import gametype.GameMode;
 import gametype.GameModeManager;
 import kit.KitManager;
@@ -88,7 +89,15 @@ public class KitEditorListeners implements Listener {
 
                 String name = ChatColor.stripColor(player.getItemInHand().getItemMeta().getDisplayName());
 
+                if(profile.getState() == PlayerState.GAME) {
 
+                    if(SoloDuelManager.getManager().isPlayerFighting(player)) {
+
+                        KitManager.getManager().loadKit(player, SoloDuelManager.getManager().getPlayerDuel(player).getGame(), true, name);
+
+                    }
+
+                }
 
             }
 

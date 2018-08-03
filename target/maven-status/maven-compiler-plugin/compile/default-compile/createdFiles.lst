@@ -18,6 +18,7 @@ practice\FreePractice.class
 arena\ArenaManager.class
 commands\duel\DuelCommand.class
 duel\solo\SoloDuel.class
+kit\KitManager$1.class
 commands\GameModeCommands.class
 listeners\lobby\KitEditorListeners.class
 utils\profile\PlayerState.class

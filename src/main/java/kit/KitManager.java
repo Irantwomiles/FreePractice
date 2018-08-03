@@ -337,17 +337,7 @@ public class KitManager {
                 player.sendMessage(ChatColor.YELLOW + "Loaded in bard kit:" + ChatColor.GOLD + name);
 
             }
-        } else {
-
-            player.getInventory().clear();
-            player.getInventory().setArmorContents(null);
-
-            player.getInventory().setContents(game.getInv());
-            player.getInventory().setArmorContents(game.getArmor());
-
-            player.sendMessage(ChatColor.YELLOW + "Couldn't find any kits for you, loaded the default kit.");
         }
-
     }
 
 }
