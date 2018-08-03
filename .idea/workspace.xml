@@ -13,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DuelRequestListeners.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/listeners/duel/DuelRequestListeners.java">
+      <file leaf-file-name="DuelEndListeners.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/listeners/duel/DuelEndListeners.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-409">
-              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+            <state relative-caret-position="380">
+              <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -25,11 +25,42 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FreePractice.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/practice/FreePractice.java">
+      <file leaf-file-name="DuelRunnable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/run/DuelRunnable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="52" column="75" selection-start-line="52" selection-start-column="75" selection-end-line="52" selection-end-column="75" />
+            <state relative-caret-position="442">
+              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KitEditorListeners.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/listeners/lobby/KitEditorListeners.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="328" column="32" selection-start-line="328" selection-start-column="32" selection-end-line="328" selection-end-column="32" />
+              <folding>
+                <element signature="method#onEdit#0;class#KitEditorListeners#0" />
+                <element signature="method#onClick#0;class#KitEditorListeners#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KitManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/kit/KitManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="320" column="43" lean-forward="true" selection-start-line="320" selection-start-column="43" selection-end-line="320" selection-end-column="43" />
+              <folding>
+                <element signature="method#createKit#0;class#KitManager#0" />
+                <element signature="method#deleteKit#0;class#KitManager#0" />
+                <element signature="method#doesKitExist#0;class#KitManager#0" />
+                <element signature="method#getKitSize#0;class#KitManager#0" />
+                <element signature="method#getKits#0;class#KitManager#0" />
+                <element signature="e#8816#9028#0" expanded="true" />
+                <element signature="e#9027#9028#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,6 +85,7 @@
       <find>gameTypeExi</find>
       <find>GameType</find>
       <find>ArrayList</find>
+      <find>KitMana</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -91,21 +123,21 @@
         <option value="$PROJECT_DIR$/src/main/java/commands/SetEditorLocationCommand.java" />
         <option value="$PROJECT_DIR$/src/main/resources/plugin.yml" />
         <option value="$PROJECT_DIR$/src/main/java/commands/SetSpawnLocationCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/listeners/lobby/JoinListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/SpawnLocations.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/GameModeCommands.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/inventory/PlayerInventories.java" />
-        <option value="$PROJECT_DIR$/src/main/java/listeners/lobby/KitEditorListeners.java" />
-        <option value="$PROJECT_DIR$/src/main/java/run/DuelRunnable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/kit/KitManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/listeners/duel/DuelStartListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/arena/ArenaType.java" />
         <option value="$PROJECT_DIR$/src/main/java/duel/solo/SoloDuelManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/duel/solo/SoloDuel.java" />
         <option value="$PROJECT_DIR$/src/main/java/listeners/duel/custom/DuelEndEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/practice/FreePractice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/listeners/duel/DuelEndListeners.java" />
         <option value="$PROJECT_DIR$/src/main/java/listeners/duel/DuelRequestListeners.java" />
+        <option value="$PROJECT_DIR$/src/main/java/listeners/duel/DuelEndListeners.java" />
+        <option value="$PROJECT_DIR$/src/main/java/listeners/lobby/JoinListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/run/DuelRunnable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/listeners/lobby/KitEditorListeners.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kit/KitManager.java" />
       </list>
     </option>
   </component>
@@ -116,11 +148,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-13" />
-    <option name="width" value="1696" />
-    <option name="height" value="1026" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="833" />
+    <option name="width" value="854" />
+    <option name="height" value="1017" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -167,6 +198,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FreePractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FreePractice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="listeners" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -194,7 +233,24 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="listeners" type="462c0819:PsiDirectoryNode" />
+              <item name="lobby" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FreePractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FreePractice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="practice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FreePractice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FreePractice" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="run" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -280,7 +336,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="833" y="0" width="854" height="1017" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -290,9 +346,9 @@
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.25255972" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18765281" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.38664988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -311,7 +367,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -589,13 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/listeners/lobby/JoinListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/SetEditorLocationCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -648,45 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/listeners/lobby/KitEditorListeners.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="114" selection-start-line="114" selection-end-line="114" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onInteract#0;class#KitEditorListeners#0" />
-            <element signature="method#onClick#0;class#KitEditorListeners#0" />
-            <element signature="method#onClose#0;class#KitEditorListeners#0" />
-            <element signature="method#onChat#0;class#KitEditorListeners#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/run/DuelRunnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="57" lean-forward="true" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kit/KitManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="282" column="48" selection-start-line="282" selection-start-column="48" selection-end-line="282" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#createKit#0;class#KitManager#0" />
-            <element signature="method#deleteKit#0;class#KitManager#0" />
-            <element signature="method#doesKitExist#0;class#KitManager#0" />
-            <element signature="method#getKitSize#0;class#KitManager#0" />
-            <element signature="method#getKits#0;class#KitManager#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/listeners/duel/custom/DuelStartEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -732,31 +742,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/listeners/duel/DuelEndListeners.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1894#1983#0" expanded="true" />
-            <element signature="e#1982#1983#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/practice/FreePractice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
+        <state relative-caret-position="318">
           <caret line="52" column="75" selection-start-line="52" selection-start-column="75" selection-end-line="52" selection-end-column="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/listeners/duel/DuelRequestListeners.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-409">
+        <state relative-caret-position="407">
           <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/listeners/lobby/JoinListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/listeners/duel/DuelEndListeners.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/run/DuelRunnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/listeners/lobby/KitEditorListeners.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="328" column="32" selection-start-line="328" selection-start-column="32" selection-end-line="328" selection-end-column="32" />
+          <folding>
+            <element signature="method#onEdit#0;class#KitEditorListeners#0" />
+            <element signature="method#onClick#0;class#KitEditorListeners#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kit/KitManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="320" column="43" lean-forward="true" selection-start-line="320" selection-start-column="43" selection-end-line="320" selection-end-column="43" />
+          <folding>
+            <element signature="method#createKit#0;class#KitManager#0" />
+            <element signature="method#deleteKit#0;class#KitManager#0" />
+            <element signature="method#doesKitExist#0;class#KitManager#0" />
+            <element signature="method#getKitSize#0;class#KitManager#0" />
+            <element signature="method#getKits#0;class#KitManager#0" />
+            <element signature="e#8816#9028#0" expanded="true" />
+            <element signature="e#9027#9028#0" expanded="true" />
           </folding>
         </state>
       </provider>

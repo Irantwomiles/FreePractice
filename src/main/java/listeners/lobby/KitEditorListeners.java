@@ -82,6 +82,18 @@ public class KitEditorListeners implements Listener {
 
         }
 
+        if(event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK) {
+
+            if(player.getItemInHand() != null && player.getItemInHand().getType() == Material.ENCHANTED_BOOK) {
+
+                String name = ChatColor.stripColor(player.getItemInHand().getItemMeta().getDisplayName());
+
+
+
+            }
+
+        }
+
     }
 
     @EventHandler

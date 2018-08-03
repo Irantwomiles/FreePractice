@@ -13,6 +13,8 @@ public class JoinListener implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
 
+        event.setJoinMessage(null);
+
         Player player = event.getPlayer();
 
         locations.teleportSpawn(player);

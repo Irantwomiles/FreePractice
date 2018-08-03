@@ -43,10 +43,14 @@ public class DuelEndListeners implements Listener {
 
         }
 
+        event.getDrops().clear();
+
     }
 
     @EventHandler
     public void onQuit(PlayerQuitEvent event) {
+
+        event.setQuitMessage(null);
 
         Player player = event.getPlayer();
 

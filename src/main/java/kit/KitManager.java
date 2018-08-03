@@ -1,6 +1,7 @@
 package kit;
 
 import gametype.GameMode;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -12,6 +13,7 @@ import practice.FreePractice;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 
 public class KitManager {
 
@@ -284,6 +286,67 @@ public class KitManager {
 
         }
 
+    }
+
+    public void loadKit(final Player player, final GameMode game, boolean type, String name) {
+
+        Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(FreePractice.getInstance(), new Runnable() {
+            public void run() {
+                player.getInventory().setContents(game.getInv());
+                player.getInventory().setArmorContents(game.getArmor());
+            }
+
+        }, 3);
+
+        file = new File(FreePractice.getInstance().getDataFolder() + "/Kits/" + player.getUniqueId().toString(), game.getName() + ".yml");
+
+        if(file.exists()) {
+
+            YamlConfiguration config = YamlConfiguration.loadConfiguration(file);
+
+            if(type) {
+
+                List<?> inv = config.getList("normal." + name + ".inv");
+                List<?> armor = config.getList("normal." + name + ".armor");
+
+                ItemStack[] inventory = inv.toArray(new ItemStack[inv.size()]);
+                ItemStack[] gear = armor.toArray(new ItemStack[armor.size()]);
+
+                player.getInventory().clear();
+                player.getInventory().setArmorContents(null);
+
+                player.getInventory().setContents(inventory);
+                player.getInventory().setArmorContents(gear);
+
+                player.sendMessage(ChatColor.YELLOW + "Loaded in diamond kit:" + ChatColor.BLUE + name);
+
+            } else {
+
+                List<?> inv = config.getList("bard." + name + ".inv");
+                List<?> armor = config.getList("bard." + name + ".armor");
+
+                ItemStack[] inventory = inv.toArray(new ItemStack[inv.size()]);
+                ItemStack[] gear = armor.toArray(new ItemStack[armor.size()]);
+
+                player.getInventory().clear();
+                player.getInventory().setArmorContents(null);
+
+                player.getInventory().setContents(inventory);
+                player.getInventory().setArmorContents(gear);
+
+                player.sendMessage(ChatColor.YELLOW + "Loaded in bard kit:" + ChatColor.GOLD + name);
+
+            }
+        } else {
+
+            player.getInventory().clear();
+            player.getInventory().setArmorContents(null);
+
+            player.getInventory().setContents(game.getInv());
+            player.getInventory().setArmorContents(game.getArmor());
+
+            player.sendMessage(ChatColor.YELLOW + "Couldn't find any kits for you, loaded the default kit.");
+        }
 
     }
 

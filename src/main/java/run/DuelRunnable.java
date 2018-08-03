@@ -27,13 +27,11 @@ public class DuelRunnable extends BukkitRunnable {
 
                     if(player == null) continue;
 
-                    player.sendMessage(ChatColor.YELLOW + "Match starting in " + ChatColor.GRAY + duel.getMatchDuration() + ChatColor.YELLOW + " second(s)");
+                    player.sendMessage(ChatColor.YELLOW + "Match starting in " + ChatColor.GRAY + (5 - duel.getMatchDuration()) + ChatColor.YELLOW + " seconds");
 
                 }
 
             }
-
-
         }
     }
 }
