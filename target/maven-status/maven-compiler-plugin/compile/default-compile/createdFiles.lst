@@ -2,6 +2,7 @@ duel\team\TeamDuel.class
 utils\inventory\PlayerInventories.class
 arena\Arena.class
 gametype\GameType.class
+listeners\duel\DuelEndListeners.class
 utils\SpawnLocations$1.class
 commands\arena\ArenaCommands.class
 utils\profile\ProfileManager.class
@@ -29,6 +30,7 @@ commands\duel\AcceptCommand.class
 listeners\lobby\JoinListener.class
 listeners\duel\DuelRequestListeners.class
 gametype\GameModeManager.class
+listeners\duel\DuelEndListeners$1.class
 listeners\duel\DuelStartListener.class
 listeners\duel\custom\DuelStartEvent.class
 duel\solo\SendDuel.class

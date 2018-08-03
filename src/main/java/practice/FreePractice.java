@@ -8,6 +8,7 @@ import commands.arena.ArenaCommands;
 import commands.duel.AcceptCommand;
 import commands.duel.DuelCommand;
 import gametype.GameModeManager;
+import listeners.duel.DuelEndListeners;
 import listeners.duel.DuelRequestListeners;
 import listeners.duel.DuelStartListener;
 import listeners.lobby.ItemListeners;
@@ -54,6 +55,7 @@ public class FreePractice extends JavaPlugin {
         Bukkit.getServer().getPluginManager().registerEvents(new JoinListener(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new KitEditorListeners(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new DuelStartListener(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new DuelEndListeners(), this);
     }
 
     private void registerCommands() {

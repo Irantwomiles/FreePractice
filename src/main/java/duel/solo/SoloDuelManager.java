@@ -85,7 +85,7 @@ public class SoloDuelManager {
 
     }
 
-    public Duel getPlayerDuel(Player player) {
+    public SoloDuel getPlayerDuel(Player player) {
 
         for(SoloDuel duel : duels) {
 
