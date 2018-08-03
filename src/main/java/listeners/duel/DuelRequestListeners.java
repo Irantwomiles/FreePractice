@@ -25,9 +25,13 @@ public class DuelRequestListeners implements Listener {
 
         Profile profile = ProfileManager.getInstance().getProfile(player);
 
-        if(profile == null) return;
+        if(profile == null) {
+            return;
+        }
 
-        if(profile.getState() != PlayerState.LOBBY) return;
+        if(profile.getState() != PlayerState.LOBBY) {
+            return;
+        }
 
         if(event.getClickedInventory() == null) {
             return;
@@ -49,7 +53,7 @@ public class DuelRequestListeners implements Listener {
             return;
         }
 
-        if(event.getInventory().getTitle().equals(ChatColor.GREEN + "Game Modes")) {
+        if(event.getInventory().getTitle().equals(ChatColor.RED + "Game Modes")) {
 
             Player target = Bukkit.getPlayer(DuelCommand.getDuelRequest().get(player.getUniqueId()));
 

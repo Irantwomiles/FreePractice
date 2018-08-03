@@ -13,25 +13,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DuelEndListeners.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/listeners/duel/DuelEndListeners.java">
+      <file leaf-file-name="DuelRequestListeners.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/listeners/duel/DuelRequestListeners.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1094">
-              <caret line="73" column="67" selection-start-line="73" selection-start-column="67" selection-end-line="73" selection-end-column="67" />
+            <state relative-caret-position="-409">
+              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1894#1983#0" expanded="true" />
-                <element signature="e#1982#1983#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FreePractice.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FreePractice.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/practice/FreePractice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="57" column="83" selection-start-line="57" selection-start-column="83" selection-end-line="57" selection-end-column="83" />
+            <state relative-caret-position="216">
+              <caret line="52" column="75" selection-start-line="52" selection-start-column="75" selection-end-line="52" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -80,7 +78,6 @@
         <option value="$PROJECT_DIR$/src/main/java/utils/profile/Profile.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/arena/ArenaCommands.java" />
         <option value="$PROJECT_DIR$/src/main/java/listeners/lobby/ItemListeners.java" />
-        <option value="$PROJECT_DIR$/src/main/java/listeners/duel/DuelRequestListeners.java" />
         <option value="$PROJECT_DIR$/src/main/java/gametype/GameModeManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/gametype/GameMode.java" />
         <option value="$PROJECT_DIR$/src/main/java/duel/Duel.java" />
@@ -106,8 +103,9 @@
         <option value="$PROJECT_DIR$/src/main/java/duel/solo/SoloDuelManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/duel/solo/SoloDuel.java" />
         <option value="$PROJECT_DIR$/src/main/java/listeners/duel/custom/DuelEndEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/listeners/duel/DuelEndListeners.java" />
         <option value="$PROJECT_DIR$/src/main/java/practice/FreePractice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/listeners/duel/DuelEndListeners.java" />
+        <option value="$PROJECT_DIR$/src/main/java/listeners/duel/DuelRequestListeners.java" />
       </list>
     </option>
   </component>
@@ -118,7 +116,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-13" />
     <option name="width" value="1696" />
@@ -292,9 +290,9 @@
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.25" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18765281" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18765281" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -699,13 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/listeners/duel/DuelRequestListeners.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/arena/ArenaType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -743,8 +734,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/listeners/duel/DuelEndListeners.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1094">
-          <caret line="73" column="67" selection-start-line="73" selection-start-column="67" selection-end-line="73" selection-end-column="67" />
+        <state relative-caret-position="584">
+          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1894#1983#0" expanded="true" />
@@ -755,8 +746,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/practice/FreePractice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="57" column="83" selection-start-line="57" selection-start-column="83" selection-end-line="57" selection-end-column="83" />
+        <state relative-caret-position="216">
+          <caret line="52" column="75" selection-start-line="52" selection-start-column="75" selection-end-line="52" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/listeners/duel/DuelRequestListeners.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-409">
+          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
